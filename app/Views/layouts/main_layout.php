@@ -6,9 +6,10 @@
     <title><?= APP_NAME; ?></title>
 
     <!-- Bootstrap css -->
-    <link rel="stylesheet" href="<?= base_url('assets/bootstrap/bootstrap.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets/bootstrap/bootstrap.min.css') ?>">
+   
     <!-- Fontawaesome -->
-    <link rel="stylesheet" href="<?= base_url('assets/fontawesome/css/all.min.css'); ?>">
+    <link rel="stylesheet" href="<?= site_url('assets/fontawesome/css/all.min.css'); ?>">
 </head>
 <body>
 
@@ -17,7 +18,7 @@
 
 
     <!-- Bootstrap js -->
-    <script src="<?= base_url('assets/bootstrap/bootstrap.bundle.min.js'); ?>"></script>
+    <script src="<?= site_url('assets/bootstrap/bootstrap.bundle.min.js'); ?>"></script>
     
 </body>
 </html>
