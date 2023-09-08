@@ -1,0 +1,14 @@
+ERROR - 2023-09-07 03:24:47 --> mysqli_sql_exception: All parts of a PRIMARY KEY must be NOT NULL; if you need NULL in a key, use UNIQUE instead in C:\laragon\www\gestortarefas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\gestortarefas\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\laragon\www\gestortarefas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\laragon\www\gestortarefas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\laragon\www\gestortarefas\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\laragon\www\gestortarefas\app\Database\Migrations\2023-09-07-031706_TasksTable.php(58): CodeIgniter\Database\Forge->createTable('tasks')
+#5 C:\laragon\www\gestortarefas\system\Database\MigrationRunner.php(877): App\Database\Migrations\TasksTable->up()
+#6 C:\laragon\www\gestortarefas\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\gestortarefas\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\gestortarefas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\gestortarefas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\gestortarefas\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
