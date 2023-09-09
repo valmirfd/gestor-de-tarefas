@@ -9,7 +9,7 @@ class Main extends BaseController
 {
     public function index()
     {      
-                
+            
     }
 
     public function login()
@@ -19,6 +19,9 @@ class Main extends BaseController
 
     public function login_submit()
     {
-        echo 'Login submit requisitado';
+        $usuario = $this->request->getPost();
+
+        echo '<pre>';
+        print_r($usuario);
     }
 }
